@@ -8,18 +8,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
     // console.log(e);
-    handleToDo(e.target.new_task_description.value);
+    buildToDo(e.target.new_task_description.value);
   });
 });
 
-function handleToDo(todo) {
+function buildToDo(todo) {
   // console.log(todo);
   // create a li
   let li = document.createElement("li");
   li.textContent = `${todo} `;
   //create a button
   let btn = document.createElement("button");
-  btn.textContent = " delete ";
+  btn.addEventListener("click", toDelete);
+  btn.textContent = " Delete ";
   li.appendChild(btn);
   // console.log(li);
   document.querySelector("#create-task-form").appendChild(li);
