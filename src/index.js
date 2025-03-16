@@ -5,10 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(document.querySelector("form"));
 
   //prevent default behavour on form
-  document.querySelector("form").addEventListener("submit", (e) => {
+  let form = document.querySelector("form");
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
     // console.log(e);
     buildToDo(e.target.new_task_description.value);
+    form.reset();
   });
 });
 
