@@ -12,22 +12,40 @@ document.addEventListener("DOMContentLoaded", () => {
     buildToDo(e.target.new_task_description.value);
     form.reset();
   });
+
+  function buildToDo(todo) {
+    // console.log(todo);
+    // create a li
+    let li = document.createElement("li");
+    li.textContent = `${todo} `;
+    //create a button
+    let btn = document.createElement("button");
+    btn.addEventListener("click", toDelete);
+    btn.textContent = " Delete ";
+    li.appendChild(btn);
+    // console.log(li);
+    document.querySelector("#create-task-form").appendChild(li);
+  }
+
+  function toDelete(e) {
+    e.target.parentNode.remove();
+  }
 });
 
-function buildToDo(todo) {
-  // console.log(todo);
-  // create a li
-  let li = document.createElement("li");
-  li.textContent = `${todo} `;
-  //create a button
-  let btn = document.createElement("button");
-  btn.addEventListener("click", toDelete);
-  btn.textContent = " Delete ";
-  li.appendChild(btn);
-  // console.log(li);
-  document.querySelector("#create-task-form").appendChild(li);
-}
+// function buildToDo(todo) {
+//   // console.log(todo);
+//   // create a li
+//   let li = document.createElement("li");
+//   li.textContent = `${todo} `;
+//   //create a button
+//   let btn = document.createElement("button");
+//   btn.addEventListener("click", toDelete);
+//   btn.textContent = " Delete ";
+//   li.appendChild(btn);
+//   // console.log(li);
+//   document.querySelector("#create-task-form").appendChild(li);
+// }
 
-function toDelete(e) {
-  e.target.parentNode.remove();
-}
+// function toDelete(e) {
+//   e.target.parentNode.remove();
+// }
