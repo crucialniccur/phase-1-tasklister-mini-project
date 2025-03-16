@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //prevent default behavour on form
   document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(e);
-    console.log(e.target);
+    // console.log(e);
+    console.log(e.target.new_task_description.value);
   });
 });
