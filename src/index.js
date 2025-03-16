@@ -13,5 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function handleToDo(todo) {
-  console.log(todo);
+  // console.log(todo);
+  let li = document.createElement("li");
+  li.textContent = todo;
+  console.log(li);
 }
