@@ -16,7 +16,7 @@ function handleToDo(todo) {
   // console.log(todo);
   // create a li
   let li = document.createElement("li");
-  li.textContent = todo;
+  li.textContent = `${todo} `;
   //create a button
   let btn = document.createElement("button");
   btn.textContent = " delete ";
