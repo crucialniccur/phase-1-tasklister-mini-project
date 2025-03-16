@@ -25,3 +25,7 @@ function buildToDo(todo) {
   // console.log(li);
   document.querySelector("#create-task-form").appendChild(li);
 }
+
+function toDelete(e) {
+  e.target.parentNode.remove();
+}
