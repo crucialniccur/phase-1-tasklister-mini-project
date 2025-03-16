@@ -20,6 +20,7 @@ function handleToDo(todo) {
   //create a button
   let btn = document.createElement("button");
   btn.textContent = " delete ";
+  li.appendChild(btn);
   // console.log(li);
   document.querySelector("#create-task-form").appendChild(li);
 }
