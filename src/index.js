@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function handleToDo(todo) {
   // console.log(todo);
+  // create a li
   let li = document.createElement("li");
   li.textContent = todo;
-  console.log(li);
+  //create a button
+  // console.log(li);
+  document.querySelector("#create-task-form").appendChild(li);
 }
