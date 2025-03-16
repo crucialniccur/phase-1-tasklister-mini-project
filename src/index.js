@@ -18,6 +18,8 @@ function handleToDo(todo) {
   let li = document.createElement("li");
   li.textContent = todo;
   //create a button
+  let btn = document.createElement("button");
+  btn.textContent = " delete ";
   // console.log(li);
   document.querySelector("#create-task-form").appendChild(li);
 }
