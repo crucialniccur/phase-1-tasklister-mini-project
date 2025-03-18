@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // console.log("am working!!!!");
     // grab input value
     handleTaskDescription(e.target.new_task_description.value);
+    form.reset();
   });
 
   // create task
