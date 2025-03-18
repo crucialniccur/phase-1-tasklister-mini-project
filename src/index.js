@@ -18,6 +18,7 @@ function handleTaskDescription(task) {
   let li = document.createElement("li");
   li.textContent = `${task} `;
   let btn = document.createElement("button");
+  btn.addEventListener("click", deleteTask);
   btn.textContent = " Delete task ";
   li.appendChild(btn);
   // console.log(li);
