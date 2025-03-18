@@ -40,9 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     let formInput = document.querySelector("#new-task-description").value;
     // console.log(formInput.value);
-    console.log(formInput);
+    // console.log(formInput);
     taskList = document.querySelector("#tasks");
     inputValue(formInput);
+    form.reset();
   });
 });
 
