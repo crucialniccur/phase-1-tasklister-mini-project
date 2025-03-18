@@ -55,6 +55,7 @@ function inputValue(task) {
   btn.textContent = " Delete task";
   btn.addEventListener("click", deleteTask);
   li.appendChild(btn);
+  taskList = document.querySelector("#tasks");
   taskList.appendChild(li);
 }
 
