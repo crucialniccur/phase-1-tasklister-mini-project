@@ -14,5 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function handleTaskDescription(task) {
-  console.log(task);
+  // console.log(task);
+  let li = document.createElement("li");
+  li.textContent = task;
+  console.log(li);
 }
