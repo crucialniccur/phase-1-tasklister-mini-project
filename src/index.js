@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     // console.log("am working!!!!");
     // grab input value
-    console.log(e.target.new_task_description.value);
+    handleTaskDescription(e.target.new_task_description.value);
   });
 
   // create task
@@ -17,5 +17,6 @@ function handleTaskDescription(task) {
   // console.log(task);
   let li = document.createElement("li");
   li.textContent = task;
-  console.log(li);
+  // console.log(li);
+  document.querySelector("#tasks").appendChild(li);
 }
