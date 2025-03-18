@@ -35,4 +35,8 @@
 //  mochatest now
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
+  let form = document.querySelector("form");
+  form.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
 });
