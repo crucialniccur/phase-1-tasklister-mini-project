@@ -38,13 +38,17 @@ document.addEventListener("DOMContentLoaded", () => {
   let form = document.querySelector("#create-task-form");
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    let formInput = document.querySelector("#new-task-description");
-    console.log(formInput.value);
+    let formInput = document.querySelector("#new-task-description").value;
+    // console.log(formInput.value);
+    console.log(formInput);
     taskList = document.querySelector("#tasks");
-    inputValue(taskList);
+    inputValue(formInput);
   });
 });
 
 function inputValue(task) {
   // console.log(task);
+  let li = document.createElement("li");
+  li.textContent = task;
+  taskList.appendChild(li);
 }
