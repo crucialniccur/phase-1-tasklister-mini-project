@@ -19,6 +19,7 @@ function handleTaskDescription(task) {
   li.textContent = task;
   let btn = document.createElement("button");
   btn.textContent = " Delete task ";
+  li.appendChild(btn);
   // console.log(li);
   document.querySelector("#tasks").appendChild(li);
 }
