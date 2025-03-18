@@ -35,8 +35,16 @@
 //  mochatest now
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-  let form = document.querySelector("form");
-  form.addEventListener("click", (e) => {
+  let form = document.querySelector("#create-task-form");
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
+    let formInput = document.querySelector("#new-task-description");
+    console.log(formInput.value);
+    taskList = document.querySelector("#tasks");
+    inputValue(taskList);
   });
 });
+
+function inputValue(task) {
+  // console.log(task);
+}
