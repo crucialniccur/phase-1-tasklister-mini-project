@@ -24,3 +24,8 @@ function handleTaskDescription(task) {
   // console.log(li);
   document.querySelector("#tasks").appendChild(li);
 }
+
+function deleteTask(e) {
+  // console.log(e.target);
+  e.target.parentNode.remove();
+}
