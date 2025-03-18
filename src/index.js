@@ -56,3 +56,8 @@ function inputValue(task) {
   li.appendChild(btn);
   taskList.appendChild(li);
 }
+
+function deleteTask(e) {
+  // console.log(e.target);
+  e.target.parentNode.remove();
+}
