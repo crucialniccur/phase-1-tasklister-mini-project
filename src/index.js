@@ -52,6 +52,7 @@ function inputValue(task) {
   li.textContent = `${task} `;
   let btn = document.createElement("button");
   btn.textContent = " Delete task";
+  btn.addEventListener("click", deleteTask);
   li.appendChild(btn);
   taskList.appendChild(li);
 }
