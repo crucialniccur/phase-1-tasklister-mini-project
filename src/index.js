@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function handleTaskDescription(task) {
   // console.log(task);
   let li = document.createElement("li");
-  li.textContent = task;
+  li.textContent = `${task} `;
   let btn = document.createElement("button");
   btn.textContent = " Delete task ";
   li.appendChild(btn);
